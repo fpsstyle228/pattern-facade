@@ -1,6 +1,5 @@
-class Facade extends Power,DVDRom,HDD{
+class Facade {
     constructor(){
-        super();
         this.power = new Power();
         this.dvd = new DVDRom();
         this.hdd = new HDD();
@@ -38,9 +37,9 @@ class DVDRom {
 class HDD{
     copy(dvd){
         if (dvd){
-            console.log('Копируется')ж
+            console.log('Копируется');
         }else {
-            console.log('Диска нету')
+            console.log('Диска нету');
         }
     }
 }
